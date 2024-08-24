@@ -73,6 +73,14 @@ public class HomePage
         Assert.assertEquals(actual_Text,expect_Text,"Text Doesn't Matches!!");
     }
 
+    @Test(priority = 5)
+    public void validateText4()
+    {
+        String actual_Text = driver.findElement(By.xpath("//*[@id='Ele-b197a206-14c2-4768-bf90-e55996f70c9f']/div")).getText();
+        String expect_Text = "Tap To Claim";
+        Assert.assertEquals(actual_Text,expect_Text,"Text Doesn't Matches!!");
+    }
+
     @AfterClass
     public void tearDown()
     {
