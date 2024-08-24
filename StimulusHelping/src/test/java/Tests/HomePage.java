@@ -57,6 +57,22 @@ public class HomePage
         Assert.assertEquals(actual_Text,expect_Text,"Text Doesn't Match!!");
     }
 
+    @Test(priority = 3)
+    public void validateText2()
+    {
+        String actual_Text = driver.findElement(By.xpath("//*[@id='Ele-a20387ed-97a9-4a92-bbdd-9a347fea9f6e']/h1")).getText();
+        String expect_Text = "Enhanced Subsidy Program for Low-Income Americans";
+        Assert.assertEquals(actual_Text,expect_Text,"Text Doesn't Matches!!");
+    }
+
+    @Test(priority = 4)
+    public void validateText3()
+    {
+        String actual_Text = driver.findElement(By.xpath("//*[@id='Ele-63cb25e0-486e-4a19-a0e3-b209cf30342d']/h4")).getText();
+        String expect_Text = "Hurry, offer ends soon!";
+        Assert.assertEquals(actual_Text,expect_Text,"Text Doesn't Matches!!");
+    }
+
     @AfterClass
     public void tearDown()
     {

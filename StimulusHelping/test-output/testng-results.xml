@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-25T03:41:15 IST" name="Adstia_Testing_Suite" finished-at="2024-08-25T03:41:29 IST" duration-ms="14671">
+  <suite started-at="2024-08-25T04:27:21 IST" name="Adstia_Testing_Suite" finished-at="2024-08-25T04:27:37 IST" duration-ms="15767">
     <groups>
     </groups>
-    <test started-at="2024-08-25T03:41:15 IST" name="ChromeTests" finished-at="2024-08-25T03:41:22 IST" duration-ms="7866">
+    <test started-at="2024-08-25T04:27:21 IST" name="ChromeTests" finished-at="2024-08-25T04:27:32 IST" duration-ms="10851">
       <class name="Tests.HomePage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Tests.HomePage@4c9f8c13]" started-at="2024-08-25T03:41:15 IST" name="launchBrowser" finished-at="2024-08-25T03:41:22 IST" duration-ms="7497" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Tests.HomePage@5ae50ce6]" started-at="2024-08-25T04:27:21 IST" name="launchBrowser" finished-at="2024-08-25T04:27:32 IST" duration-ms="10435" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,23 +18,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="checkLogoExists()[pri:1, instance:Tests.HomePage@4c9f8c13]" started-at="2024-08-25T03:41:22 IST" name="checkLogoExists" finished-at="2024-08-25T03:41:22 IST" duration-ms="63" status="PASS">
+        <test-method signature="checkLogoExists()[pri:1, instance:Tests.HomePage@5ae50ce6]" started-at="2024-08-25T04:27:32 IST" name="checkLogoExists" finished-at="2024-08-25T04:27:32 IST" duration-ms="94" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogoExists -->
-        <test-method signature="validateText1()[pri:2, instance:Tests.HomePage@4c9f8c13]" started-at="2024-08-25T03:41:22 IST" name="validateText1" finished-at="2024-08-25T03:41:22 IST" duration-ms="44" status="PASS">
+        <test-method signature="validateText1()[pri:2, instance:Tests.HomePage@5ae50ce6]" started-at="2024-08-25T04:27:32 IST" name="validateText1" finished-at="2024-08-25T04:27:32 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateText1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePage@4c9f8c13]" started-at="2024-08-25T03:41:22 IST" name="tearDown" finished-at="2024-08-25T03:41:22 IST" duration-ms="194" status="PASS">
+        <test-method signature="validateText2()[pri:3, instance:Tests.HomePage@5ae50ce6]" started-at="2024-08-25T04:27:32 IST" name="validateText2" finished-at="2024-08-25T04:27:32 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateText2 -->
+        <test-method signature="validateText3()[pri:4, instance:Tests.HomePage@5ae50ce6]" started-at="2024-08-25T04:27:32 IST" name="validateText3" finished-at="2024-08-25T04:27:32 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateText3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePage@5ae50ce6]" started-at="2024-08-25T04:27:32 IST" name="tearDown" finished-at="2024-08-25T04:27:32 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.HomePage -->
     </test> <!-- ChromeTests -->
-    <test started-at="2024-08-25T03:41:15 IST" name="EdgeTests" finished-at="2024-08-25T03:41:24 IST" duration-ms="9105">
+    <test started-at="2024-08-25T04:27:21 IST" name="EdgeTests" finished-at="2024-08-25T04:27:34 IST" duration-ms="12395">
       <class name="Tests.HomePage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Tests.HomePage@481a996b]" started-at="2024-08-25T03:41:15 IST" name="launchBrowser" finished-at="2024-08-25T03:41:22 IST" duration-ms="7497" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Tests.HomePage@3d51f06e]" started-at="2024-08-25T04:27:21 IST" name="launchBrowser" finished-at="2024-08-25T04:27:32 IST" duration-ms="10761" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,23 +53,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="checkLogoExists()[pri:1, instance:Tests.HomePage@481a996b]" started-at="2024-08-25T03:41:22 IST" name="checkLogoExists" finished-at="2024-08-25T03:41:22 IST" duration-ms="63" status="PASS">
+        <test-method signature="checkLogoExists()[pri:1, instance:Tests.HomePage@3d51f06e]" started-at="2024-08-25T04:27:32 IST" name="checkLogoExists" finished-at="2024-08-25T04:27:32 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogoExists -->
-        <test-method signature="validateText1()[pri:2, instance:Tests.HomePage@481a996b]" started-at="2024-08-25T03:41:22 IST" name="validateText1" finished-at="2024-08-25T03:41:22 IST" duration-ms="54" status="PASS">
+        <test-method signature="validateText1()[pri:2, instance:Tests.HomePage@3d51f06e]" started-at="2024-08-25T04:27:32 IST" name="validateText1" finished-at="2024-08-25T04:27:32 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateText1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePage@481a996b]" started-at="2024-08-25T03:41:22 IST" name="tearDown" finished-at="2024-08-25T03:41:24 IST" duration-ms="1429" status="PASS">
+        <test-method signature="validateText2()[pri:3, instance:Tests.HomePage@3d51f06e]" started-at="2024-08-25T04:27:32 IST" name="validateText2" finished-at="2024-08-25T04:27:32 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateText2 -->
+        <test-method signature="validateText3()[pri:4, instance:Tests.HomePage@3d51f06e]" started-at="2024-08-25T04:27:32 IST" name="validateText3" finished-at="2024-08-25T04:27:32 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateText3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePage@3d51f06e]" started-at="2024-08-25T04:27:32 IST" name="tearDown" finished-at="2024-08-25T04:27:34 IST" duration-ms="1462" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.HomePage -->
     </test> <!-- EdgeTests -->
-    <test started-at="2024-08-25T03:41:15 IST" name="FirefoxTests" finished-at="2024-08-25T03:41:29 IST" duration-ms="14671">
+    <test started-at="2024-08-25T04:27:21 IST" name="FirefoxTests" finished-at="2024-08-25T04:27:37 IST" duration-ms="15767">
       <class name="Tests.HomePage">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Tests.HomePage@1cbbffcd]" started-at="2024-08-25T03:41:15 IST" name="launchBrowser" finished-at="2024-08-25T03:41:28 IST" duration-ms="13669" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:Tests.HomePage@27ce24aa]" started-at="2024-08-25T04:27:21 IST" name="launchBrowser" finished-at="2024-08-25T04:27:36 IST" duration-ms="14658" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,15 +88,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="checkLogoExists()[pri:1, instance:Tests.HomePage@1cbbffcd]" started-at="2024-08-25T03:41:28 IST" name="checkLogoExists" finished-at="2024-08-25T03:41:28 IST" duration-ms="46" status="PASS">
+        <test-method signature="checkLogoExists()[pri:1, instance:Tests.HomePage@27ce24aa]" started-at="2024-08-25T04:27:36 IST" name="checkLogoExists" finished-at="2024-08-25T04:27:36 IST" duration-ms="43" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkLogoExists -->
-        <test-method signature="validateText1()[pri:2, instance:Tests.HomePage@1cbbffcd]" started-at="2024-08-25T03:41:28 IST" name="validateText1" finished-at="2024-08-25T03:41:28 IST" duration-ms="28" status="PASS">
+        <test-method signature="validateText1()[pri:2, instance:Tests.HomePage@27ce24aa]" started-at="2024-08-25T04:27:36 IST" name="validateText1" finished-at="2024-08-25T04:27:36 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateText1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePage@1cbbffcd]" started-at="2024-08-25T03:41:28 IST" name="tearDown" finished-at="2024-08-25T03:41:29 IST" duration-ms="890" status="PASS">
+        <test-method signature="validateText2()[pri:3, instance:Tests.HomePage@27ce24aa]" started-at="2024-08-25T04:27:36 IST" name="validateText2" finished-at="2024-08-25T04:27:36 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateText2 -->
+        <test-method signature="validateText3()[pri:4, instance:Tests.HomePage@27ce24aa]" started-at="2024-08-25T04:27:36 IST" name="validateText3" finished-at="2024-08-25T04:27:36 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateText3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.HomePage@27ce24aa]" started-at="2024-08-25T04:27:36 IST" name="tearDown" finished-at="2024-08-25T04:27:37 IST" duration-ms="948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
