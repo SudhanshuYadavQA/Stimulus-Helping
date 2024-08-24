@@ -49,6 +49,14 @@ public class HomePage
         Assert.assertTrue(driver.findElement(By.xpath("//*[@class='sc-fQpRED lkLXph CMS_image']")).isDisplayed(),"Logo Doesn't Exist!!");
     }
 
+    @Test(priority = 2)
+    public void validateText1()
+    {
+        String actual_Text = driver.findElement(By.xpath("//*[@id='Ele-f4613486-291b-410e-a344-1254581ae7de']/h5")).getText();
+        String expect_Text = "68,872 Americans Benefited Last Week";
+        Assert.assertEquals(actual_Text,expect_Text,"Text Doesn't Match!!");
+    }
+
     @AfterClass
     public void tearDown()
     {
