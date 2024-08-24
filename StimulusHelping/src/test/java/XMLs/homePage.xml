@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Adstia_Test_Suite" parallel="tests" thread-count="3">
+
+    <test name="Adstia_Test_Chrome">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="Tests.HomePageTests"/>
+        </classes>
+    </test>
+
+    <test name="Adstia_Test_Firefox">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="Tests.HomePageTests"/>
+        </classes>
+    </test>
+</suite>
