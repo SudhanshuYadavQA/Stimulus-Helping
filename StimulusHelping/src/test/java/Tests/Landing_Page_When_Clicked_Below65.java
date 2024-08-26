@@ -8,6 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -54,5 +55,10 @@ public class Landing_Page_When_Clicked_Below65
         String actual_Question = driver.findElement(By.xpath("//*[@class='sc-irEpRR jkDlqm']")).getText();
         String expect_Question = "Do you have Medicaid, Medicare, VA, or Tricare Coverage?";
         Assert.assertEquals(actual_Question,expect_Question,"Question Doesn't Matches!!");
+    }
+    @AfterClass
+    public void tearDown()
+    {
+        driver.quit();
     }
 }
