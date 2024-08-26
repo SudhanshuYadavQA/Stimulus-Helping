@@ -56,6 +56,16 @@ public class Landing_Page_When_Clicked_Below65
         String expect_Question = "Do you have Medicaid, Medicare, VA, or Tricare Coverage?";
         Assert.assertEquals(actual_Question,expect_Question,"Question Doesn't Matches!!");
     }
+    @Test(priority = 2)
+    public void verifyOptionSet() throws InterruptedException
+    {
+        ArrayList<String> options = new ArrayList<>();
+        options.add(driver.findElement(By.xpath("(//*[@class='sc-dwYcXH kAnXKn option-button'])[1]")).getText());
+        options.add(driver.findElement(By.xpath("(//*[@class='sc-dwYcXH kAnXKn option-button'])[2]")).getText());
+        Thread.sleep(5000);
+        Assert.assertTrue(options.contains("No"),"Option Mismatched!!");
+        Assert.assertTrue(options.contains("Yes"),"Options Mismatched!!");
+    }
     @AfterClass
     public void tearDown()
     {
