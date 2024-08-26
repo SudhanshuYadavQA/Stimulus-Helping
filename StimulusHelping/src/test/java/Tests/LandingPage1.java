@@ -61,14 +61,15 @@ public class LandingPage1
     {
         String actual_question1 = driver.findElement(By.xpath("//*[@class='sc-irEpRR jkDlqm']")).getText();
         String expect_question1 = "What is your age group ?";
-        Assert.assertEquals(actual_question1,expect_question1,"Question Verified Successfully!!");
+        Assert.assertEquals(actual_question1,expect_question1,"Question NOT Verified Successfully!!");
     }
     @Test(priority = 4)
-    public void validateOptions()
+    public void validateOptions() throws InterruptedException
     {
         ArrayList<String> Options = new ArrayList<>();
         Options.add(driver.findElement(By.xpath("(//*[@class='sc-dwYcXH kAnXKn option-button'])[1]")).getText());
         Options.add(driver.findElement(By.xpath("(//*[@class='sc-dwYcXH kAnXKn option-button'])[2]")).getText());
+        Thread.sleep(4000);
         Assert.assertTrue(Options.contains("Below 65"),"Text Doesn't Match!!");
         Assert.assertTrue(Options.contains("Above 65"),"Text Doesn't Match!!");
     }
