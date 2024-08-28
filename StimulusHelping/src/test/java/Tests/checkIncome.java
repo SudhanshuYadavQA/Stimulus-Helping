@@ -50,7 +50,7 @@ public class checkIncome extends checkHealthInsurance
     public void validateAgeGroup() throws InterruptedException
     {
         driver.findElement(By.linkText("Tap To Claim")).click();
-        //Thread.sleep(5000);
+        Thread.sleep(5000);
         String actual_Validate_Age_Question = driver.findElement(By.xpath("//*[@class='sc-irEpRR jkDlqm']")).getText();
         String expect_Validate_Age_Question = "What is your age group ?";
         Assert.assertEquals(actual_Validate_Age_Question,expect_Validate_Age_Question,"Age Group Does Not Matched!!");
@@ -65,7 +65,7 @@ public class checkIncome extends checkHealthInsurance
     {
         driver.findElement(By.xpath("//*[text()='Below 65']")).click();
         String actual_Validate_Coverage_Question = driver.findElement(By.xpath("//*[@class='sc-irEpRR jkDlqm']")).getText();
-        //Thread.sleep(5000);
+        Thread.sleep(5000);
         String expect_Validate_Coverage_Question = "Do you have Medicaid, Medicare, VA, or Tricare Coverage?";
         Assert.assertEquals(actual_Validate_Coverage_Question,expect_Validate_Coverage_Question);
         ArrayList<String> options = new ArrayList<>();
@@ -78,7 +78,7 @@ public class checkIncome extends checkHealthInsurance
     public void validateHealthInsurance() throws InterruptedException
     {
         driver.findElement(By.xpath("//*[text()='No']")).click();
-        //Thread.sleep(5000);
+        Thread.sleep(5000);
         String actual_Health_Insurance_Question = driver.findElement(By.xpath("//*[@class='sc-irEpRR jkDlqm']")).getText();
         String expect_Health_Insurance_Question = "Do you have health Insurance?";
         Assert.assertEquals(actual_Health_Insurance_Question,expect_Health_Insurance_Question);
@@ -92,10 +92,15 @@ public class checkIncome extends checkHealthInsurance
     public void checkIncome() throws InterruptedException
     {
         driver.findElement(By.xpath("(//*[@class='sc-dwYcXH kAnXKn option-button'])[1]")).click();
-        //Thread.sleep(5000);
+        Thread.sleep(5000);
         String actual_Question = driver.findElement(By.xpath("//*[@class='sc-irEpRR jkDlqm']")).getText();
         String expect_Question = "Do you earn over $15,000 annually?";
         Assert.assertEquals(actual_Question,expect_Question);
+        ArrayList<String> options = new ArrayList<>();
+        options.add(driver.findElement(By.xpath("(//*[@class='sc-dwYcXH kAnXKn option-button'])[1]")).getText());
+        options.add(driver.findElement(By.xpath("(//*[@class='sc-dwYcXH kAnXKn option-button'])[2]")).getText());
+        Assert.assertTrue(options.contains("No"),"Income Verified Successfully!!");
+        Assert.assertTrue(options.contains("Yes"),"Income Verified Successfully!!");
     }
     @AfterClass
     public void tearDown()
